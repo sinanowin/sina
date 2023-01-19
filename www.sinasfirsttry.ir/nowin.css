@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgba(26, 36, 30, 0.397);
+  color: #222;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-top: 10px solid;
+  position: relative;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+.main-header {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  background-color: rgba(26, 36, 30, 0.719);
+  text-align: center;
+  border-radius: 25px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: rgba(26, 36, 30, 0.6);
+  border-radius: 14px;
+}
+
+aside {
+  background-color: rgba(26, 36, 30, 0.6);
+  border-top: 5px solid;
+  border-left: 5px solid;
+  border-right: 5px solid #444;
+  border-bottom: 5px solid #444;
+  padding: 50px 0;
+  width: 500px;
+  border-radius: 10px 30px;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(13, 22, 16);
+}
+
+h1 {
+  font-size: 30px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgb(13, 22, 16);
+}
+
+h1::after {
+  content: "sina";
+  background: linear-gradient(
+    0.25turn,
+    rgba(26, 36, 30, 0.397),
+    #5a5a5a,
+    rgba(26, 36, 30, 0.397)
+  );
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: rgba(24, 24, 24, 0.685);
+  display: flex;
+  padding: 5px 10px;
+  position: absolute;
+  top: 15px;
+  right: 200px;
+}
+
+h2 {
+  color: rgba(238, 243, 237, 0.418);
+  margin-bottom: 30px;
+  margin-top: -80px;
+  font-size: 36px;
+  padding: 5px 2px;
+}
+
+h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.sina {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.copy {
+  font-size: 15px;
+}
+
+.aside-list {
+  font-size: 16px;
+  font-weight: bold;
+}
+.point {
+  list-style: lower-greek;
+}
+
+a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+  margin: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 1s;
+}
+
+a:link {
+  color: rgb(131, 131, 131);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(131, 131, 131);
+}
+
+a:hover {
+  background: #133113;
+  box-shadow: 0 0 10px #133113, 0 0 30px #133113, 0 0 60px #133113,
+    0 0 100px #133113;
+  font-weight: bolder;
+}
+
+a:active {
+  color: #0b140b;
+}
+
+.sina-photo {
+  height: 186px;
+  width: 186px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  box-shadow: 10px 10px 10px #444;
+}
+
+.inputbox {
+  position: relative;
+  width: 250px;
+}
+
+input {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: #1d2b3a;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.25);
+  transition: 0.5s;
+}
+
+input:valid ~ span,
+input:focus ~ span {
+  color: rgb(13, 22, 16);
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #1d2b3a6b;
+  border-left: 1px solid rgb(13, 22, 16);
+  border-right: 1px solid rgb(13, 22, 16);
+  letter-spacing: 0.2em;
+}
+
+input:valid,
+input:focus {
+  border: 1px solid rgb(13, 22, 16);
+}
